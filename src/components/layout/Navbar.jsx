@@ -22,7 +22,7 @@ const Navbar = ({title}) => {
             </button>
         </div>
     </div>
-    {isOpen && ( <nav className="w-60  bg-slate-300 absolute top-16 left-2 p-4 rounded-md lg:left-24">
+    {isOpen && ( <nav className="w-100  shadow-md compact side bg-base-100 absolute top-16 left-0 p-4 rounded-md lg:left-20 z-10">
         <Link to={'/about'} onClick={()=>setisOpen(!isOpen)} className="text-lg mr-6 ml-4" >About</Link>
         <Link to={'/contact'} onClick={()=>setisOpen(!isOpen)} className=" text-lg" >Social media</Link>
     </nav>)}
